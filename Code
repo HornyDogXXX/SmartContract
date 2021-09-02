@@ -982,7 +982,7 @@ contract HDXTEST3 is Context, IERC20, Ownable {
     //New Pancakeswap router version?
     //No problem, just change it!
     function setRouterAddress(address newRouter) public onlyOwner() {
-        //Thank you FreezyEx
+        
         IUniswapV2Router02 _newPancakeRouter = IUniswapV2Router02(newRouter);
         uniswapV2Pair = IUniswapV2Factory(_newPancakeRouter.factory()).createPair(address(this), _newPancakeRouter.WETH());
         uniswapV2Router = _newPancakeRouter;
