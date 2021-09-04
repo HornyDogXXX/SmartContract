@@ -431,11 +431,11 @@ contract HDXTEST3 is Context, IERC20, Ownable {
     uint256 private _previousBurnFee = _burnFee;
 
     uint256 public _marketingFee = 4;
-    address public marketingWallet = 0x5eFecCA5DE9Fc7639d0f34791F5cb30Bf0EfB352;
+    address public marketingWallet = 0xF4dCD0920A7224AaD0f564e902e859A879D8F40b;
     uint256 private _previousmarketingFee = _marketingFee;
     
     uint256 public _developmentFee = 4;
-    address public developmentWallet = 0xD3bD43f9aC07C1054a848da4670d029883dBA26D;
+    address public developmentWallet = 0x95CFEa77697df18D4392fEe292DbD419faeeDdFb;
     uint256 private _previousdevelopmentFee = _developmentFee;
     
     uint256 public _maxTxAmount = 1000 * 10*6 * 10**9;
@@ -481,8 +481,8 @@ contract HDXTEST3 is Context, IERC20, Ownable {
         
         _isExcludedFromFee[owner()] = true;
         _isExcludedFromFee[address(this)] = true;
-        _isExcludedFromFee[address(0xD3bD43f9aC07C1054a848da4670d029883dBA26D)] = true;
-        _isExcludedFromFee[address(0x5eFecCA5DE9Fc7639d0f34791F5cb30Bf0EfB352)] = true;
+        _isExcludedFromFee[address(0xF4dCD0920A7224AaD0f564e902e859A879D8F40b)] = true;
+        _isExcludedFromFee[address(0x95CFEa77697df18D4392fEe292DbD419faeeDdFb)] = true;
        
         emit Transfer(address(0), _msgSender(), _tTotal);
     }
