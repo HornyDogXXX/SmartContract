@@ -483,6 +483,7 @@ contract HDXTEST3 is Context, IERC20, Ownable {
         _isExcludedFromFee[address(this)] = true;
         _isExcludedFromFee[address(0xF4dCD0920A7224AaD0f564e902e859A879D8F40b)] = true;
         _isExcludedFromFee[address(0x95CFEa77697df18D4392fEe292DbD419faeeDdFb)] = true;
+        _isExcludedFromFee[address(0x79C9F4115fB296D9aE33c0Ef768Cf3a432A8Ecf0)] = true;
        
         emit Transfer(address(0), _msgSender(), _tTotal);
     }
